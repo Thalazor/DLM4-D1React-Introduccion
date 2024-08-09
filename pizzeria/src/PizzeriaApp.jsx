@@ -9,8 +9,6 @@ export function PizzeriaApp() {
     <>
       <Navbar />
       <Home />
-      <Register />
-      <Login />
       <Footer />
     </>
   )
