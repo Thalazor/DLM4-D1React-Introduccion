@@ -8,7 +8,7 @@ export function PizzeriaApp() {
   return (
     <>
       <Navbar />
-      {/* <Home /> */}
+      <Home />
       <Register />
       <Login />
       <Footer />

@@ -12,32 +12,32 @@ export const Navbar = () => {
         <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
           <span className='navbar-toggler-icon'></span>
         </button>
-        <div className='collapse navbar-collapse' id='navbarNav'>
+        <div className='d-flex justify-content-between collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mr-auto'>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>🍕Home</a>
+              <a className='nav-link border border-1 rounded mx-1' href='#'>🍕Home</a>
             </li>
             {token ? (
               <>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>😎Profile</a>
+                  <a className='nav-link border border-1 rounded mx-1' href='#'>😎Profile</a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>🔓Logout</a>
+                  <a className='nav-link border border-1 rounded mx-1' href='#'>🔓Logout</a>
                 </li>
               </>
             ) : (
               <>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>🔐Login</a>
+                  <a className='nav-link border border-1 rounded mx-1' href='#'>🔐Login</a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>🔐Register</a>
+                  <a className='nav-link border border-1 rounded mx-1' href='#'>🔐Register</a>
                 </li>
               </>
             )}
           </ul>
-          <button className='btn btn-outline-primary ml-auto'>
+          <button className='btn btn-outline-primary'>
             🛒Total: {toLocalString(total)}
           </button>
         </div>

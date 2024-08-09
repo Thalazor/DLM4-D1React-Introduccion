@@ -5,8 +5,8 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <main className="container my-5">
-        <h2 className="display-4">Nuestras pizzas</h2>
+      <main className="container my-5 text-center">
+        <h4 className="bg-dark text-white display-4 border border-2 rounded-pill">Nuestras pizzas</h4>
         <div className="row">
           <div className="col-md-4 mb-4">
             <CardPizza
